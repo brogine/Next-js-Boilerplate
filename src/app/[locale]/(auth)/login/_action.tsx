@@ -2,8 +2,8 @@
 
 import { LoginSchema } from "./_schemas"
 import { getUserByEmail } from "@/app/[locale]/(auth)/_data_access/_data_access"
+import { signIn } from "@/lib/auth/auth"
 import { AuthError } from "next-auth"
-import { signIn } from "next-auth/react"
 import * as z from "zod"
 
 const DEFAULT_LOGIN_REDIRECT = "/login"
